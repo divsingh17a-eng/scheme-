@@ -1,4 +1,3 @@
-
 import React, { useMemo, useState } from "react";
 
 // ALL SCHEMES
@@ -24,7 +23,7 @@ const schemes = {
     { name: "Working Women Hostel Scheme", benefit: "Safe & affordable housing", link: "https://wcd.gov.in" }
   ],
   job: [
-    { name: "PMKVY 4.0", age: 35, benefit: "Free Skill Training", link: "https://www.msde.gov.in/offerings/schemes-and-services/details/pradhan-mantri-kaushal-vikas-yojana-4-0-pmkvy-4-0-2021-ITO3ATMtQWa" },
+    { name: "PMKVY 4.0", age: 35, benefit: "Free Skill Training", link: "https://www.msde.gov.in/offerings/schemes-and-services/details/pradhan-mantri-kaushal-vikas-yojana-4-0-pmkvy-4-0-2021-ITO3ATMtQWA" },
     { name: "Skill India", age: 40, benefit: "Job Training", link: "https://www.skillindia.gov.in" },
     { name: "NCS Portal", age: 45, benefit: "Government Jobs", link: "https://www.ncs.gov.in" },
     { name: "Startup India", age: 50, benefit: "Startup Support", link: "https://www.startupindia.gov.in" }
@@ -242,7 +241,7 @@ const styles = {
   page: {
     fontFamily: "Inter, system-ui, sans-serif",
     minHeight: "100vh",
-    background: "linear-gradient(145deg, #0f172a, #1e293b)",
+    background: "white",
     color: "white",
     padding: "30px"
   },

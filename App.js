@@ -23,7 +23,7 @@ const schemes = {
     { name: "Working Women Hostel Scheme", benefit: "Safe & affordable housing", link: "https://wcd.gov.in" }
   ],
   job: [
-    { name: "PMKVY 4.0", age: 35, benefit: "Free Skill Training", link: "https://www.msde.gov.in/offerings/schemes-and-services/details/pradhan-mantri-kaushal-vikas-yojana-4-0-pmkvy-4-0-2021-ITO3ATMtQWA" },
+    { name: "PMKVY 4.0", age: 35, benefit: "Free Skill Training", link: "https://www.msde.gov.in/offerings/schemes-and-services/details/pradhan-mantri-kaushal-vikas-yojana-4-0-pmkvy-4-0-2021-ITO3A" },
     { name: "Skill India", age: 40, benefit: "Job Training", link: "https://www.skillindia.gov.in" },
     { name: "NCS Portal", age: 45, benefit: "Government Jobs", link: "https://www.ncs.gov.in" },
     { name: "Startup India", age: 50, benefit: "Startup Support", link: "https://www.startupindia.gov.in" }
@@ -96,7 +96,8 @@ const i18n = {
 
 export default function App() {
   const [lang, setLang] = useState("en");
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState(""
+  );
   const [response, setResponse] = useState([]);
   const [title, setTitle] = useState("✨ Discover Schemes");
   const [category, setCategory] = useState("scholarship");
@@ -242,7 +243,7 @@ const styles = {
     fontFamily: "Inter, system-ui, sans-serif",
     minHeight: "100vh",
     background: "white",
-    color: "white",
+    color: "#000",
     padding: "30px"
   },
   hero: {
@@ -250,8 +251,8 @@ const styles = {
     marginBottom: "20px"
   },
   card: {
-    background: "rgba(255,255,255,0.05)",
-    border: "1px solid rgba(255,255,255,0.1)",
+    background: "#ffffff",
+    border: "1px solid #e2e8f0",
     padding: "20px",
     borderRadius: "16px",
     marginBottom: "20px"
@@ -260,15 +261,15 @@ const styles = {
   input: {
     padding: "12px",
     borderRadius: "10px",
-    border: "1px solid #334155",
-    background: "#0f172a",
-    color: "white",
+    border: "1px solid #cbd5f5",
+    background: "#ffffff",
+    color: "#000",
     minWidth: "160px"
   },
   primaryBtn: {
     background: "linear-gradient(135deg,#6366f1,#8b5cf6)",
     border: "none",
-    color: "white",
+    color: "#000",
     padding: "12px 16px",
     borderRadius: "12px",
     cursor: "pointer",
@@ -277,7 +278,7 @@ const styles = {
   ghostBtn: {
     background: "transparent",
     border: "1px solid #64748b",
-    color: "white",
+    color: "#000",
     padding: "12px 16px",
     borderRadius: "12px"
   },
@@ -288,22 +289,22 @@ const styles = {
     marginTop: "16px"
   },
   schemeCard: {
-    background: "#0f172a",
-    border: "1px solid #334155",
+    background: "#ffffff",
+    border: "1px solid #e2e8f0",
     borderRadius: "12px",
     padding: "14px"
   },
   linkBtn: {
     marginTop: "8px",
     background: "transparent",
-    color: "#a5b4fc",
+    color: "#000",
     border: "none",
     cursor: "pointer"
   },
   bestCard: {
     marginTop: "16px",
-    background: "rgba(34,197,94,0.1)",
-    border: "1px solid rgba(34,197,94,0.3)",
+    background: "#e7f7ee",
+    border: "1px solid #86efac",
     padding: "16px",
     borderRadius: "14px"
   }
